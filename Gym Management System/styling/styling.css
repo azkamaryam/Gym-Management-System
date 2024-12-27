@@ -1,0 +1,166 @@
+/* styling.css */
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Section that holds the background */
+.background-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/section-1_bg.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: justify;
+}
+
+.section-02 {
+  width: 100%;
+  height: auto; /* Adjust height dynamically */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: justify;
+  padding: 50px 0; /* Add vertical padding for better spacing */
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.carousel {
+  height: auto; /* Adjust height dynamically based on image aspect ratio */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-inner img {
+  width: 100%; /* Ensure image width spans the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures images cover the available space without distortion */
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.text-container {
+  width: 60%;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+/* Styling for the image */
+.image-container {
+  width: 40%; /* Adjust the width of the image container */
+  padding: 20px;
+}
+
+.section-1_img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.section-03 {
+  width: 100%;
+  height: auto; /* Adjust height dynamically */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: justify;
+  padding: 50px 0; /* Add vertical padding for better spacing */
+}
+
+/* Styling for section-03 */
+.section-03 {
+  padding: 50px 0;
+  background-color: #f4f4f4;
+}
+
+/* Grid container for team profiles */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, 250px); /* 2 rows, each row 250px high */
+  gap: 20px; /* Space between grid items */
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+/* Each team member's profile */
+.team-member {
+  text-align: center; /* Center the name under the image */
+}
+
+/* Profile image styling */
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  object-fit: cover; /* Ensures the image covers the given size */
+  border-radius: 5%; /* Makes the image circular */
+  border: 3px solid #333; /* Optional: adds a border to the image */
+}
+
+/* Optional: Add some styling to the name */
+.team-member h5 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.i {
+  width: 50%;
+}
+
+.login,
+.signup {
+  background-image: url(../user/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1000px;
+}
+
+.form-control {
+  width: 400px;
+}
